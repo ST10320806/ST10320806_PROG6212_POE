@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body style="text-align: center; background-color: beige">
+    <h1>Submit a claim</h1></<br />
+    <div style="border: 2px solid grey; padding: 20px; margin: auto; display: inline-block; text-align: center; background-color:cornsilk; border-radius: 15px">
+        <p>Enter the following details to submit your claim: </p></<br />
+        <input type="text" name="ClaimID" placeholder="Claim ID" /><br />
+        <input type="text" name="LecturerID" placeholder="Lecturer ID" /><br />
+        <input type="text" name="CoordinatorID" placeholder="Coordinator ID" /><br />
+        <input type="text" name="ManagerID" placeholder="Manager ID" /><br />
+        <input type="text" name="HoursWorked" placeholder="Hours Worked" /><br />
+        <input type="date" name="Date" /><br />
+        <p>Select the document you want to upload: </p>
+        <form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" /><br />
+        <button type="submit" style="background-color:aqua">Upload Document</button>
+        </form>
+</div>
+</body>
