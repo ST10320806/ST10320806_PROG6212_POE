@@ -26,6 +26,14 @@ namespace ST10320806_POE.Controllers
         {
             return View();
         }
+        public IActionResult VerifyClaims()
+        {
+            return View();
+        }
+        public IActionResult TrackClaims()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
